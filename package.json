@@ -5,9 +5,11 @@
   "license": "MIT",
   "scripts": {
     "build": "preact build",
+    "build:gh": "GITHUB_PAGES=preact-boilerplate preact build && dot-json ./build/manifest.json start_url \"/preact-boilerplate/\"",
     "dev": "preact watch"
   },
   "devDependencies": {
+    "dot-json": "^1.2.2",
     "preact-cli": "^3.0.0"
   },
   "dependencies": {
