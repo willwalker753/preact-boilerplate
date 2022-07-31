@@ -1,4 +1,4 @@
-# preact-boilerplate
+# preact-boilerplate [![Build Status](https://github.com/willwalker753/preact-boilerplate/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/willwalker753/preact-boilerplate/actions/workflows/pages/pages-build-deployment)
 
 > Quickstart to using Preact with Github Pages.
 
@@ -64,7 +64,9 @@
 6. Go to `Pages` and change the `Branch` to `gh-pages`, and then change `Source` to `Github Actions`
 7. Push a new commit to the `develop` branch in Github
 8. Go to the `Actions` tab in Github to watch the deployment process. 
-9. After deployment, check the `Code` tab's `Environment` section. Eventually you should see the deployment there and it will have a link to the site (see example below). Give 10-15 minutes for deployment to complete after the `Actions` build. 
+9. Go back to `Pages` and change `Source` to `Deploy from a branch`
+    * You will need to switch the `Source` on all following deployments. First select `Github Actions`, then push a commit to `develop`, then select `Deploy from a branch`
+10. Go to the `Code` tab's `Environment` section. Eventually, it will show the deployment there and a link to the site (see example below). Give 10-15 minutes for deployment to complete after the `Actions` build. 
 
 > Example: [https://willwalker753.github.io/preact-boilerplate/](https://willwalker753.github.io/preact-boilerplate/)
 
