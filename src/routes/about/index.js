@@ -20,7 +20,7 @@ const About = ({ user }) => {
 			<p>
 				<button onClick={() => setCount((count) => count + 1)}>Click Me</button>
 				&nbsp;
-				Clicked {count} times.
+				Clicked {count} times
 			</p>
 		</div>
 	);
