@@ -15,8 +15,8 @@
             So we are hosting a custom 404 page that redirects the user back to the app
                 The requested path is sent as a hash, and is handled by the Preact router
         */
-        const basePath = "/preact-boilerplate";
-        const pagePath = window.location.pathname.replace(basePath, "");
-        window.location.href = `${basePath}/#!${pagePath}`;
+        const baseName = "/preact-boilerplate";
+        const pagePath = window.location.pathname.replace(baseName, "");
+        window.location.href = `${baseName}/#!${pagePath}`;
     </script>
 </html>
