@@ -20,6 +20,7 @@
 5. Change the "preact-boilerplate" to {{PROJECT_NAME}} in:
    * .github/workflows/gh-pages
    * src/template.html
+   * src/dynamic-routing/404.html
    * manifest.json
    * package.json
 6. Create an inital commit
@@ -65,13 +66,8 @@
 7. Push a new commit to the `develop` branch in Github
 8. Go to the `Actions` tab in Github to watch the deployment process. 
 9. Go back to `Pages` and change `Source` to `Deploy from a branch`
-    * You will need to switch the `Source` on all following deployments. First select `Github Actions`, then push a commit to `develop`, then select `Deploy from a branch`
+    * You may need to switch the `Source` again in future deployments. If it is not deploying, select `Github Actions`, then push a commit to `develop`, then select `Deploy from a branch`
 10. Go to the `Code` tab's `Environment` section. Eventually, it will show the deployment there and a link to the site (see example below). Give 10-15 minutes for deployment to complete after the `Actions` build. 
 
 > Example: [https://willwalker753.github.io/preact-boilerplate/](https://willwalker753.github.io/preact-boilerplate/)
 
----
-
-## Bugs
-
-* When refreshing the page on any route except root, Github returns a 404 because only index.html is hosted. Need to find a way to point all requests there or redirect there.
