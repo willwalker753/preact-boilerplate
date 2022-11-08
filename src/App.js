@@ -13,6 +13,7 @@ const App = () => {
 	if (typeof window !== 'undefined' && window?.location?.hash?.length > 0) {
 		const pagePath = window.location.hash.replace('#!', '');
 		window.location.href = baseName + pagePath;
+		return null;
 	}
 
 	return (
