@@ -1,14 +1,14 @@
 import { h } from 'preact';
 import { Link } from 'preact-router/match';
-import baseroute from '../../baseroute';
+import baseName from '../../baseName';
 import style from './style.css';
 
 const Header = () => (
 	<header class={style.header}>
 		<h1>Preact Boilerplate</h1>
 		<nav>
-			<Link activeClassName={style.active} href={`${baseroute}/`}>Home</Link>
-			<Link activeClassName={style.active} href={`${baseroute}/about`}>About</Link>
+			<Link activeClassName={style.active} href={`${baseName}/`}>Home</Link>
+			<Link activeClassName={style.active} href={`${baseName}/about`}>About</Link>
 		</nav>
 	</header>
 );
