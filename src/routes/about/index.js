@@ -4,7 +4,7 @@ import style from '/routes/about/style.css';
 
 const About = ({ user }) => {
 	const [time, setTime] = useState(Date.now());
-	const [count, setCount] = useState(10);
+	const [count, setCount] = useState(0);
 
 	useEffect(() => {
 		let timer = setInterval(() => setTime(Date.now()), 1000);
