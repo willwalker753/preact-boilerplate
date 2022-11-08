@@ -13,7 +13,7 @@ export default class Redirect extends Component {
         if (formattedTo.startsWith(baseName) === false) {
             formattedTo = baseName + formattedTo;
         }
-        route(formattedTo, true);
+        route(formattedTo);
     }
 
     render = () => {
