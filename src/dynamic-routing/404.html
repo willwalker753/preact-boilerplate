@@ -17,7 +17,6 @@
         */
         const baseName = "/preact-boilerplate";
         const pagePath = window.location.pathname.replace(baseName, "");
-        console.log('in 404.html , ', `${baseName}/#!${pagePath}`)
-        window.location.href = `${baseName}/#!${pagePath}`;
+        window.location.href = `${baseName}/redirect${pagePath}`;
     </script>
 </html>
