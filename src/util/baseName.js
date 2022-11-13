@@ -1,7 +1,3 @@
-let baseName = '';
-
-if (process.env.GITHUB_PAGES) {
-  baseName = `/${process.env.GITHUB_PAGES}`;
-}
+const baseName = '/preact-boilerplate';
 
 export default baseName;
