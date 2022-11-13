@@ -26,10 +26,6 @@ jobs:
     - run: npm ci
 
     - run: npm run build:gh
-
-    - run: cp ./src/dynamic-routing/404.html ./build
-
-    - run: ls
  
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2

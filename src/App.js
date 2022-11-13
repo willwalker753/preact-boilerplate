@@ -1,7 +1,7 @@
 import { h } from 'preact';
 import { Router } from 'preact-router';
-import baseName from './baseName';
-import Redirect from './components/redirect';
+import { createHashHistory } from 'history';
+import baseName from './util/baseName';
 
 import Header from './components/header';
 import Home from './routes/home';
@@ -11,11 +11,9 @@ const App = () => {
 	return (
 		<div id="app">
 			<Header />
-			<Router>
-				<Home path={`${baseName}/`} />
+			<Router history={createHashHistory()}>
 				<About path={`${baseName}/about`} />
-				<Redirect path={`${baseName}/redirect/:to`} />
-				<Redirect default to="/" />
+				<Home default />
 			</Router>
 		</div>
 	)

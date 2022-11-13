@@ -1,6 +1,6 @@
 import { h } from 'preact';
 import { Link } from 'preact-router/match';
-import baseName from '../../baseName';
+import baseName from '../../util/baseName';
 import style from './style.css';
 
 const Header = () => (
