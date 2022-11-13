@@ -20,7 +20,7 @@
 5. Change the "preact-boilerplate" to {{PROJECT_NAME}} in:
    * .github/workflows/gh-pages
    * src/template.html
-   * src/dynamic-routing/404.html
+   * src/404.html
    * manifest.json
    * package.json
 6. Create an inital commit
@@ -36,11 +36,11 @@
         git branch -M develop
         git push -u origin develop
     ```
-10. Start the local server with hot reload
+9.  Start the local server with hot reload
     ```bash
         . start.sh
     ```
-11. App is now served on [localhost:8080](http://localhost:8080/)
+10. App is now served on [localhost:8080](http://localhost:8080/)
 
 ---
 

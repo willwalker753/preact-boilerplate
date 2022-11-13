@@ -8,25 +8,23 @@ import Header from './components/header';
 import Home from './routes/home';
 import About from './routes/about';
 
-const history = createHashHistory();
-
 const App = () => {
-	const pushFormattedUrl = () => {
-		if (window?.location?.hash.startsWith(`#${baseName}`)) {
-			const pagePath = window.location.hash.replace(`#`, '');
-			window.history.pushState(null, null, pagePath)
-		}
-	}
 	return (
 		<div id='app'>
 			<Match>
-				{({ matches, path, url }) => {
-					pushFormattedUrl();
+				{() => {
+					// If the page path is using hash routing
+					// Then add a new history entry using standard page routing
+					// This runs every time the router changes pages
+					if (window?.location?.hash.startsWith(`#${baseName}`)) {
+						const pagePath = window.location.hash.replace(`#`, '');
+						window.history.pushState(null, null, pagePath)
+					}
 					return null;
 				}}
 			</Match>
 			<Header />
-			<Router history={history}>
+			<Router history={createHashHistory()}>
 				<About path={`${baseName}/about`} />
 				<Home default />
 			</Router>
